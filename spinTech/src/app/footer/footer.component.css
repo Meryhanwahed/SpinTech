@@ -1,0 +1,97 @@
+footer {
+    box-shadow: 0 0 2px var(--main-color);
+    background-color: #fff; /* Footer background */
+    
+    h5 {
+      color: var(--main-color); /* Use the main color for headings */
+      margin-bottom: 20px;
+    }
+    p{
+        color: #17153B;
+    }
+    .nav-link {
+      color: #17153B; /* Slightly transparent white */
+      transition: var(--main-transition);
+    }
+  
+    .nav-link:hover {
+      color: var(--btn-hover-color); /* Hover color for links */
+    }
+  
+    .link-body-emphasis + p {
+      color: #17153B; /* Same color for the paragraph */
+    }
+  
+    .contact-info {
+      li {
+        color: #17153B;
+        
+        .icon {
+          margin-right: 10px; /* Spacing adjusted for left-to-right alignment */
+        }
+      }
+    }
+  
+    form {
+      p {
+        color: #17153B;
+      }
+  
+      .form-control {
+        box-shadow: none !important;
+        border: 1px solid rgba(255, 255, 255, 0.83) !important;
+        background-color: #232020;
+        border-radius: 50px;
+        color: var(--white-color) !important;
+        padding-left: 20px;
+      }
+  
+      .form-control:active,
+      .form-control:focus {
+        background-color: #232020;
+      }
+  
+      .form-control::placeholder {
+        color: rgba(255, 255, 255, 0.83); /* Placeholder color */
+      }
+  
+      .btn {
+        background-color: var(--main-color); /* Main button color */
+        color: #fff;
+        border-radius: 50px;
+        transition: var(--main-transition);
+      }
+  
+      .btn:hover {
+        background-color: var(--btn-hover-color); /* Hover color for button */
+      }
+    }
+  
+    .rights {
+      p {
+        color: #17153B; /* Footer rights text color */
+      }
+  
+      .link-body-emphasis {
+        background-color: #17153B;
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        color: var(--white-color) !important;
+        transition: var(--main-transition);
+      }
+  
+      .link-body-emphasis:hover {
+        background-color: var(--btn-hover-color);
+        transform: translateY(-10px); /* Smooth transition on hover */
+      }
+  
+      .link-body-emphasis:hover i {
+        color: var(--black-color); /* Icon color change on hover */
+      }
+    }
+  }
+  

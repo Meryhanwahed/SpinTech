@@ -1,0 +1,22 @@
+<section class="site-features-section">
+    <div class="container">
+      <h2 class="section-title">Our Key Features</h2>
+      <div class="timeline">
+        <div class="timeline-item" *ngFor="let feature of features; let i = index">
+          <div class="timeline-content" [ngClass]="{'left': i % 2 === 0, 'right': i % 2 !== 0}">
+            <div class="feature-details">
+              <h3 class="feature-title">{{ feature.title }}</h3>
+              <p class="feature-description">{{ feature.description }}</p>
+            </div>
+            <div class="feature-image">
+              <img [src]="feature.image" alt="{{ feature.title }}">
+            </div>
+          </div>
+          <div class="timeline-marker">
+            <div class="marker-icon">{{ i + 1 }}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  

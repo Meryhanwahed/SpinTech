@@ -1,0 +1,90 @@
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+:root {
+  --main-color: #2E236C;
+  --white-color: #fff;
+  --black-color: #000;
+  --paragraph-color: #2E236C;
+  --btn-hover-color: #C8ACD6;
+  --main-transition: 0.4s;
+  --bg-navy-color: #433D8B;
+  --border-color: #ededed;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  overflow-x: hidden;
+  direction: ltr;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: var(--main-transition);
+}
+
+a:hover {
+  color: var(--main-color);
+  text-decoration: underline;
+}
+
+.wrapper {
+  padding-top: 120px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.section-padding {
+  padding: 70px 0 50px;
+}
+
+.color {
+  color: var(--main-color);
+}
+
+.btn {
+  background-color: var(--main-color);
+  color: var(--white-color);
+  padding: 10px 20px;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: var(--main-transition);
+}
+
+.btn:hover,
+.btn:active {
+  background-color: var(--btn-hover-color);
+  color: var(--black-color);
+}
+
+a:focus, .btn:focus {
+  outline: 2px dashed var(--main-color);
+  outline-offset: 4px;
+}
+
+@media (max-width: 768px) {
+  .btn {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+
+  .section-padding {
+    padding: 50px 0 30px;
+  }
+}

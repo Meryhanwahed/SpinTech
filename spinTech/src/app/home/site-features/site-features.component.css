@@ -1,0 +1,113 @@
+/* General styling */
+.site-features-section {
+    padding: 60px 20px;
+    background: #f9f9f9;
+  }
+  
+  .section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #17153B;
+    margin-bottom: 50px;
+  }
+  
+  /* Timeline layout */
+  .timeline {
+    position: relative;
+    padding: 20px 0;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .timeline-item {
+    display: flex;
+    position: relative;
+    margin-bottom: 60px;
+  }
+  
+  .timeline-marker {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    background-color: #2E236C;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 1.5rem;
+  }
+  
+  .timeline-marker .marker-icon {
+    font-weight: bold;
+  }
+  
+  /* Left-right alternating layout */
+  .timeline-content {
+    width: 45%;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 10px;
+    position: relative;
+  }
+  
+  .timeline-content.left {
+    margin-right: auto;
+  }
+  
+  .timeline-content.right {
+    margin-left: auto;
+  }
+  
+  .feature-details {
+    margin-bottom: 15px;
+  }
+  
+  .feature-title {
+    font-size: 1.75rem;
+    color: #2E236C;
+  }
+  
+  .feature-description {
+    color: #9B86BD;
+  }
+  
+  .feature-image img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  /* Connector between timeline items */
+  .timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 4px;
+    height: 100%;
+    background-color: #2E236C;
+  }
+  
+  @media (max-width: 768px) {
+    .timeline-content {
+      width: 100%;
+    }
+    
+    .timeline-marker {
+      left: 10%;
+      transform: translateX(0);
+    }
+  
+    .timeline::before {
+      left: 10%;
+      transform: translateX(0);
+    }
+  }
+  

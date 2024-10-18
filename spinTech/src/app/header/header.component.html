@@ -1,0 +1,93 @@
+<header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary position-fixed w-100 z-3">
+      <div class="container-fluid">
+        <!-- Logo and home link -->
+        <a class="navbar-brand" routerLink="/" aria-label="Home">
+          <img src="Logo" alt="Company Logo" width="70px" />
+        </a>
+  
+        <!-- Navbar toggler for mobile view -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <!-- Navbar content -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+            <!-- Home Link -->
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                routerLink="/"
+                routerLinkActive="active-link"
+                [routerLinkActiveOptions]="{ exact: true }"
+                aria-label="Home"
+              >
+                Home
+              </a>
+            </li>
+  
+            <!-- Our Initiatives Link -->
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/about" routerLinkActive="active-link" aria-label="Our Initiatives">
+                About Us
+              </a>
+            </li>
+  
+            <!-- Volunteer Opportunities Link -->
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/volunteer-opportunity" routerLinkActive="active-link" aria-label="Volunteer Opportunities">
+                Coaches
+              </a>
+            </li>
+  
+            <!-- Donations Link -->
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/donate" routerLinkActive="active-link" aria-label="Donations">
+                For Companies
+              </a>
+            </li>
+            <!-- Donations Link -->
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/donate" routerLinkActive="active-link" aria-label="Donations">
+                Job Placement
+              </a>
+            </li>
+            <!-- Donations Link -->
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/donate" routerLinkActive="active-link" aria-label="Donations">
+                Projects
+              </a>
+            </li>
+            <!-- Donations Link -->
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/donate" routerLinkActive="active-link" aria-label="Donations">
+                Blog
+              </a>
+            </li>
+  
+            <!-- Contact Us Link -->
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/contact" routerLinkActive="active-link" aria-label="Contact Us">
+                Contact Us
+              </a>
+            </li>
+          </ul>
+  
+          <!-- Login Button -->
+          <a class="btn ms-3" routerLink="/login" routerLinkActive="active-link" aria-label="Login">
+            Sign In / Sign Up
+          </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  

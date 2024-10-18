@@ -1,0 +1,78 @@
+/* General styling */
+.why-choose-us-section {
+    padding: 60px 20px;
+    background: #f9f9f9; /* Light background color */
+  }
+  
+  .section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--main-color); /* Main text color */
+    margin-bottom: 10px;
+  }
+  
+  .section-description {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #7776B3; /* Secondary text color */
+    margin-bottom: 40px;
+  }
+  
+  /* Items layout */
+  .why-choose-us-items {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align items */
+    gap: 30px; /* Space between items */
+  }
+  
+  .item {
+    display: flex; /* Flex layout for horizontal alignment */
+    align-items: center; /* Center align items vertically */
+    width: 100%; /* Full width */
+    max-width: 800px; /* Max width for larger screens */
+    padding: 20px; /* Padding for spacing */
+    background: #ffffff; /* White background for each item */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow */
+    transition: transform 0.3s; /* Transition for hover effect */
+  }
+  
+  .item:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+  }
+  
+  .icon img {
+    width: 50px; /* Icon size */
+    height: 50px; /* Icon size */
+    margin-right: 15px; /* Space to the right of the icon */
+  }
+  
+  .item-title {
+    font-size: 1.5rem; /* Title font size */
+    color: #2E236C; /* Your primary color */
+    margin-bottom: 10px;
+  }
+  
+  .item-description {
+    color: #7776B3; /* Description text color */
+    font-size: 1rem; /* Description font size */
+  }
+  
+  /* Responsive layout */
+  @media (max-width: 768px) {
+    .why-choose-us-items {
+      padding: 0 10px; /* Adjust padding on small screens */
+    }
+  
+    .item {
+      flex-direction: column; /* Stack icon and text vertically on small screens */
+      align-items: flex-start; /* Align items to the start */
+      text-align: left; /* Align text to the left */
+    }
+  
+    .icon {
+      margin-bottom: 10px; /* Space below icon when stacked */
+    }
+  }
+  

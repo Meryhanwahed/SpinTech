@@ -1,0 +1,20 @@
+<section class="why-choose-us-section">
+    <div class="container">
+      <h2 class="section-title">Why Choose Us?</h2>
+      <p class="section-description">
+        Discover the reasons that make us the ideal choice for your coaching needs.
+      </p>
+      <div class="why-choose-us-items">
+        <div class="item" *ngFor="let item of whyChooseUsItems">
+          <div class="item-content">
+            <div class="icon">
+              <img [src]="item.icon" alt="{{ item.title }} icon" />
+            </div>
+            <h3 class="item-title">{{ item.title }}</h3>
+            <p class="item-description">{{ item.description }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  

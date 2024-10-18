@@ -1,0 +1,32 @@
+.sign-up-cta {
+    padding: 40px 20px;
+    background-color: #F4F6FF; /* Primary color */
+    color: #17153B;
+    text-align: center;
+    border-radius: 10px;
+  }
+  
+  .cta-title {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .cta-description {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .cta-button {
+    padding: 15px 30px;
+    background-color: white;
+    color: var(--main-color); /* Primary color */
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: var(--main-transition)0.3s;
+  }
+  
+  .cta-button:hover {
+    background-color: var(--btn-hover-color); /* Lighten on hover */
+  }
+  

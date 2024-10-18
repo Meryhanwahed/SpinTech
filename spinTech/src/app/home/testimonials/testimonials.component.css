@@ -1,0 +1,90 @@
+/* General styling */
+.testimonials-section {
+    padding: 60px 20px;
+    background: #f9f9f9;
+  }
+  
+  .section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #433D8B;
+    margin-bottom: 10px;
+  }
+  
+  .section-description {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #433D8B;
+    margin-bottom: 40px;
+  }
+  
+  /* Testimonials layout */
+  .testimonials-container {
+    display: flex;
+    overflow-x: auto; /* Enables horizontal scrolling */
+    padding: 20px;
+    gap: 20px;
+  }
+  
+  .testimonial-card {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-width: 300px;
+    max-width: 300px;
+    padding: 20px;
+    position: relative;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .testimonial-quote {
+    font-size: 1.1rem;
+    color: #C8ACD6;
+    font-style: italic;
+    margin-bottom: 15px;
+    position: relative;
+  }
+  
+  .testimonial-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .testimonial-name {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #2E236C; /* Your primary color */
+  }
+  
+  .testimonial-position {
+    color: #C8ACD6;
+    font-size: 0.9rem;
+  }
+  
+  /* Scrollbar styling (optional) */
+  .testimonials-container::-webkit-scrollbar {
+    height: 10px;
+  }
+  
+  .testimonials-container::-webkit-scrollbar-thumb {
+    background: #2E236C; /* Change to your primary color */
+    border-radius: 10px;
+  }
+  
+  .testimonials-container::-webkit-scrollbar-track {
+    background: #f0f0f0; /* Change to your track color */
+  }
+  
+  /* Responsive layout */
+  @media (max-width: 768px) {
+    .testimonials-container {
+      flex-direction: row;
+      overflow-x: auto; /* Keeps horizontal scrolling on small screens */
+    }
+  
+    .testimonial-card {
+      min-width: 90%; /* Adapts the card size on smaller screens */
+    }
+  }
+  

@@ -1,0 +1,11 @@
+<div class="training-areas-container">
+    <h2 class="section-title">Explore Our Training Areas</h2>
+    <div class="training-areas-grid">
+      <div class="training-area-card" *ngFor="let area of trainingAreas">
+        <i class="{{ area.icon }} training-icon"></i>
+        <h3 class="training-title">{{ area.title }}</h3>
+        <p class="training-description">{{ area.description }}</p>
+      </div>
+    </div>
+  </div>
+  
