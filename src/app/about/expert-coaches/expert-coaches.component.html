@@ -1,0 +1,15 @@
+<section class="expert-coaches-section">
+    <div class="container">
+      <h2 class="section-title">Meet Our Expert Coaches</h2>
+      <div class="coaches-grid">
+        <div class="coach-card" *ngFor="let coach of coaches">
+          <div class="coach-image-container">
+            <img [src]="coach.image" alt="{{ coach.name }}" class="coach-image" />
+          </div>
+          <h3 class="coach-name">{{ coach.name }}</h3>
+          <p class="coach-expertise">{{ coach.expertise }}</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
