@@ -22,22 +22,22 @@ export class OurPartnersComponent {
   partners: Partner[] = [
     {
       name: 'Tech Corp',
-      logo: 'assets/logos/tech-corp-logo.png', // Example logo path
+      logo: 'assets/images/about/partner/logo.svg', // Example logo path
       website: 'https://techcorp.com'
     },
     {
       name: 'Innovate Labs',
-      logo: 'assets/logos/innovate-labs-logo.png',
+      logo: 'assets/images/about/partner/logo.svg',
       website: 'https://innovatelabs.com'
     },
     {
       name: 'Future Solutions',
-      logo: 'assets/logos/future-solutions-logo.png',
+      logo: 'assets/images/about/partner/logo.svg',
       website: 'https://futuresolutions.com'
     },
     {
       name: 'AI Pioneers',
-      logo: 'assets/logos/ai-pioneers-logo.png',
+      logo: 'assets/images/about/partner/logo.svg',
       website: 'https://aipioneers.com'
     }
   ];
